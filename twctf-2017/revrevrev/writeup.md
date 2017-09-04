@@ -6,7 +6,7 @@ Given binary executable, find the flag in it
 
 ## Solution
 
-First of all, we need to examine platform for witch executable was compiled:
+First of all, we need to examine platform for wich executable was compiled:
 
 ```
 $ file rev
@@ -93,7 +93,7 @@ $2 = 0xffffd57b "}}}}}"
 $3 = 0x8048870 "A)\331e\241\361\341\311\031\t\223\023\241\t\271I\271\211\335a1i\241\361q!\235\325=", <incomplete sequence \325>
 ```
 
-The first pointer is encrypted user input, and the second pointer is posible encrypted flag. As we can see on user input chipher just replace characters by some unknown rule. Because of it, we can try to send hidden value to input and check how it will work.
+The first vlaue is a pointer to encrypted user input, and the second - to the posible encrypted flag. As we can see on user input chipher just replace characters by some unknown rule. Because of it, we can try to send hidden value to input and check how it will work.
 
 ```bash
 $ printf "A)\331e\241\361\341\311\031\t\223\023\241\t\271I\271\211\335a1i\241\361q\!\235\325=\n" > testcase
