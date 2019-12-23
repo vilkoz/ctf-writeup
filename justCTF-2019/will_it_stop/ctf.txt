@@ -1,0 +1,42 @@
+Will it stop?
+
+Memory limit:
+Time limit:
+
+42 MiB
+1337 ms
+
+Vesim is a CS student. This semester he is really struggling to pass computability and formal language
+theory course. He asked for a last chance, so the professor gave him a task: "For a given Python program, tell
+me if it will eventually stop or not!". Sadly Vesim was pwning and reversing so he didn’t have time to solve this
+problem. Could you help him?
+The professor agreed to host the submission system on his private server.
+Funny fact: At home the professor has a wide collection of flags from all over the world!
+
+I NPUT
+First line of input contains number N .
+Following N lines contain Python source code.
+
+O UTPUT
+If the given Python program stops, the output shall contain "YES", otherwise "NO".
+
+E XAMPLES
+Input
+
+Output
+
+2
+while 1:
+pass
+
+NO
+
+Input
+
+Output
+
+1
+print("jctf{stop!}")
+
+YES
+
